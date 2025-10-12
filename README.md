@@ -1,4 +1,4 @@
-<h1 align="center" id="title">inoteBook App</h1>
+<h1 align="center" id="title">Paper Trail</h1>
 
 <p align="center"><img src="https://socialify.git.ci/animeredits/Inotebook/image?description=1&descriptionEditable=The%20Cloud%20Notes%20App%20is%20a%20web%20application%20built%20using%20the%20MERN%20(MongoDB%2C%20Express.js%2C%20React.js%2C%20Node.js)%20stack.%20It%20allows%20users%20to%20create%2C%20read%2C%20update%2C%20and%20delete%20notes%20stored%20in%20the%20cloud.&font=Raleway&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F30%2FReact_Logo_SVG.svg%2F1024px-React_Logo_SVG.svg.png&name=1&pattern=Charlie%20Brown&theme=Dark" alt="project-image"></p>
 
@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[Inotesbooks](https://inotesbooks.vercel.app/) 
+[Paper Trail](https://Paper-Trail.vercel.app/) 
   
 <h2>🧐 Features</h2>
 
@@ -28,11 +28,11 @@
 <p>1. Clone the repository:</p>
 
 ```
-git clone https://github.com/animeredits/Inotebook.git
+git clone https://github.com/Alok-Vaishnav/Paper-Trail
 ```
 
 ```
-cd Inotebook
+cd Paper Trail
 ```
 
 <p>2. Install dependencies for both frontend and backend:</p>
