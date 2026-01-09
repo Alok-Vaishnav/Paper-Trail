@@ -53,7 +53,7 @@ router.post('/createuser', [
         res.json({success, authtoken })
 
     } catch (error) {
-        console.error(error.massage);
+        console.error(error.message);
         res.status(500).send("Internal Server Error")
     }
 })
@@ -97,11 +97,11 @@ router.post('/login', [
             }
         }
         const authtoken = jwt.sign(data, JWT_SECRET);
-        const success = true
+        success = true
         res.json({ success, authtoken })
 
     } catch (error) {
-        console.error(error.massage);
+        console.error(error.message);
         res.status(500).send("Internal Server Error")
     }
 })
@@ -114,7 +114,7 @@ try {
 const user =  await User.findById(userId).select("password")
 res.send(user)
 } catch (error) {
-    console.error(error.massage);
+    console.error(error.message);
     res.status(500).send("Internal Server Error")
 }
 })
