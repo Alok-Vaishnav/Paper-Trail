@@ -40,7 +40,18 @@ const SignUp = () => {
       {
         loading: "Creating Account...",
         success: (data) => data,
-        error: (error) => error,
+        error: (error) => {
+          if (error.includes("already exists")) {
+            return "❌ Email already registered! Try logging in.";
+          } else if (error.includes("least 8 characters")) {
+            return "❌ Password must be at least 8 characters!";
+          } else if (error.includes("valid name")) {
+            return "❌ Name must be at least 3 characters!";
+          } else if (error.includes("valid email")) {
+            return "❌ Please enter a valid email!";
+          }
+          return `❌ ${error}`;
+        },
       }
     );
   };

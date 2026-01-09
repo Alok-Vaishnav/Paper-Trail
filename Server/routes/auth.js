@@ -17,8 +17,8 @@ router.post('/createuser', [
     body('email', 'Enter a valid email').isEmail(),
     body('password', 'password must be atleast 8 characters').isLength({ min: 8 }),
 ], async (req, res) => {
-    let = success = false;
-    // if ther are errors, return Bad request and the errors
+    let success = false;
+    // if there are errors, return Bad request and the errors
 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
